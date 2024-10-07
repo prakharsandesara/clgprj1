@@ -1,0 +1,267 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap');
+
+@import url('vendor/bootstrap.min.css');
+@import url('vendor/fontawesome.css');
+@import url('vendor/brands.css');
+@import url('vendor/regular.css');
+@import url('vendor/solid.css');
+@import url('vendor/swiper-bundle.min.css');
+
+@property --progress {
+    syntax: '<integer>';
+    inherits: true;
+    initial-value: 0;
+}
+
+@keyframes load {
+    to {
+        --progress: var(--value)
+    }
+}
+
+@keyframes background_animation {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 110%;
+    }
+}
+
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+        transform-origin: center;
+        border-width: 0px;
+    }
+
+    to {
+        opacity: 0;
+        transform: scale3d(1.7, 1.7, 1.8);
+        transform-origin: center;
+        border-width: 13px;
+    }
+}
+
+
+:root {
+    --light-color: #fbfbfb;
+    --secondary-color: #f9f5f3;
+    --text-color: #3a3a3a;
+    --gray-color: #8b8b8b;
+    --accent-color: #a55850;
+    --accent-color-2: #b98d76;
+ 
+}
+
+body {
+    font-family: var(--font-2);
+}
+
+h1 {
+    font-size: 76px;
+}
+
+h2 {
+    font-size: 68px;
+}
+
+h3 {
+    font-size: 48px
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+span,
+button,
+a {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+button {
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.hover-transform:hover {
+    transform: translateY(-10px);
+}
+
+button:hover {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w-max-content {
+    width: max-content !important;
+}
+
+.banner-heading {
+    font-size: 5.5rem;
+}
+
+.font-1 {
+    font-family: var(--font-1);
+}
+
+.font-2 {
+    font-family: var(--font-2);
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.fs-7 {
+    font-size: 0.8rem !important;
+}
+
+.fw-black {
+    font-weight: 900 !important;
+}
+
+.video-e119 {
+    width: 60%;
+    margin-bottom: -3rem;
+    margin-left: -3rem;
+}
+
+.form input,
+.form textarea,
+.form select {
+    background-color: white;
+    border-radius: 10px;
+    border: solid 2px var(--accent-color);
+    color: #131313;
+}
+
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+    box-shadow: none;
+    border: solid 2px var(--accent-color);
+
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    color: var(--gray-color);
+    font-family: var(--font-2);
+}
+
+.form .form-select {
+    color: #131313;
+}
+
+.form-check-input:checked[type=checkbox] {
+    --bs-form-check-bg-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>');
+}
+
+.form input.form-check-input {
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.form input.form-check-input:checked {
+    border: 1px solid blue;
+    color: blue;
+}
+
+.form .submit_form {
+    padding-inline: 2rem;
+    padding-block: 0.7rem;
+    text-decoration: none;
+    transition: all 0.5s;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 5px;
+    border: solid 2px var(--accent-color);
+}
+
+.submit_form:hover {
+    background-color: transparent;
+}
+
+.submit_form-subscribe {
+    padding-inline: 2rem;
+    padding-block: 0.7rem;
+    text-decoration: none;
+    transition: all 0.5s;
+    color: white;
+    background-color: var(--accent-color-1);
+    border-radius: 5px;
+}
+
+.submit_form-subscribe:hover {
+    background-color: var(--dark-bg);
+    color: white;
+    filter: none;
+}
+
+
+#header {
+    transition: all 0.5s ease;
+}
+
+.nav-link {
+    border-bottom: 2px solid transparent;
+    font-size: 1.1rem;
+    font-family: var(--font-2);
+    padding-block: 1.2rem;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #ebdad0;
+}
+
+.nav-link.active {
+    color: #ebdad0 !important;
+}
+
+.navbar-toggler {
+    border: none;
+    color: var(--accent-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--accent-color);
+}
+
+
+
+
+
+}

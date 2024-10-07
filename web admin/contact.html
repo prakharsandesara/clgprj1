@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title></title>
+</head>
+
+<body>
+   
+
+    <!-- Header -->
+    <div id="header" class="fixed-top bg-accent-opacity">
+        <div class="r-container">
+            <nav class="navbar navbar-expand-lg font-2">
+                <div class="container-fluid">
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">Homepage</a>
+                            </li>                          
+                                                          
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                       
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+   
+
+    <main>
+        <!-- Banner -->
+        <div class="section position-relative"
+            style="background-image: url(image/image-1920x900-11.jpg); height: 70vh; background-position: top;">
+            <div class="image-overlay"></div>
+            <div class="r-container h-100 position-relative" style="z-index: 2;">
+                <div class="d-flex flex-column w-100 h-100 justify-content-center align-items-center mx-auto text-center text-white gap-3"
+                    style="max-width: 895px;">
+                    <h1 class="font-1 m-0">Contact Us</h1>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="r-container">
+                <div class="d-flex flex-lg-row flex-column-reverse gap-5">
+                    <div class="col">
+                        <div class="d-flex flex-column">
+                            <div class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-3 my-4"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex p-2">
+                                    <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
+                                        <i class="fa-solid fa-check f-36 text-success"></i>
+                                        Your Message Successfully Send.
+                                    </div>
+                                    <button type="button"
+                                        class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                                        data-bs-dismiss="toast" aria-label="Close"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                            <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-3"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex p-2">
+                                    <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
+                                        <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
+                                        Something Wrong ! Send Form Failed.
+                                    </div>
+                                    <button type="button"
+                                        class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                                        data-bs-dismiss="toast" aria-label="Close"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                            <form
+                                class="d-flex flex-column h-100 justify-content-center w-100 needs-validation mb-3 form"
+                                novalidate>
+                                <div class="col mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control py-3 px-4" name="name" id="name"
+                                        placeholder="Your Name" required>
+                                    <div class="invalid-feedback">
+                                        The field is required.
+                                    </div>
+                                </div>
+                                <div class="row row-cols-lg-2 row-cols-1">
+                                    <div class="col mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control py-3 px-4" name="email" id="email"
+                                            placeholder="Your Email" required>
+                                        <div class="invalid-feedback">
+                                            The field is required.
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <label for="phone" class="form-label">Phone</label>
+                                        <input type="tel" class="form-control py-3 px-4" name="phone" id="phone"
+                                            placeholder="Your Phone Number" required>
+                                        <div class="invalid-feedback">
+                                            The field is required.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control py-3 px-4" id="message" name="message" rows="5"
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <button type="submit"
+                                        class="btn btn-accent submit_form py-3 w-100 d-flex justify-content-center">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column gap-3 h-100 justify-content-center">
+                            <span class="fw-semibold">Contact Us</span>
+                            <h3 class="font-1 fw-semibold">Send Us a Message</h3>
+                            <p class="text-gray">
+                                Curabitur quis diam malesuada sem porta mollis. Ut vel tortor in neque sollicitudin
+                                feugiat a ac ex. Etiam eleifend orci eget tempus rhoncus. Nunc ligula erat, elementum eu
+                                augue at, pharetra iaculis leo.
+                            </p>
+                            <ul class="list gap-3 text-black mb-4">
+                                <li>
+                                    <span class="d-flex flex-row align-items-center gap-3">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        KLLG st, No.99, Pku City, ID 28289
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="d-flex flex-row align-items-center gap-3">
+                                        <i class="fa-solid fa-phone"></i>
+                                        0761-8523-398
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="d-flex flex-row align-items-center gap-3">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        hello@domainsite.com
+                                    </span>
+                                </li>
+                            </ul>
+                            +
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+   
+</body>
+
+</html>
